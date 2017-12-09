@@ -10,7 +10,7 @@ app.get('/', function(req, res) {
 res.sendfile('default.html', { root: __dirname})
 })
 
-app.get('/dateValue/:dateVal', function(req, res) {
+app.get('/:dateVal', function(req, res) {
 var dateVal = req.params.dateVal;
 var unixDate;
 var naturalDate;
